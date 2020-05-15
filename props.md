@@ -3,14 +3,28 @@
 Answer these on your own, then compare answers as a group
 
 1.  What are props?
+It stand for properties and is being used for passing data from one component to another
 
 2.  How do you pass props from a parent to a child?
+You need to name the variable, assign it, and then pass it down to the child 
+```JSX
+username = {this.state.username}
+```
 
 3.  How do you access props from a class-based child component?
+this.props.myName in the class based
+```jsx
+{this.props.username}
+```
 
 4.  How do you access props from a functional component?
+props.myName without the this.
 
 5.  How do you bind a function to a parent component so that it can be passed to a child?
+```JSX
+this.changeName = this.changeName.bind(this);
+```
+this.changeName = this.changeName.bind(this);
 
 ### Understand
 
